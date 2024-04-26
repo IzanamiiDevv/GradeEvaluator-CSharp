@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeEvaluator-CSharp", "GradeEvaluator-CSharp.csproj", "{43DBF447-67D2-446B-8662-BBE5F4F0B87E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DBF447-67D2-446B-8662-BBE5F4F0B87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DBF447-67D2-446B-8662-BBE5F4F0B87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DBF447-67D2-446B-8662-BBE5F4F0B87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DBF447-67D2-446B-8662-BBE5F4F0B87E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB87F1E9-68E2-483A-87A2-44A72E3C3122}
+	EndGlobalSection
+EndGlobal
