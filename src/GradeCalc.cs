@@ -11,21 +11,34 @@ namespace Grade_Calculator
 
         public static int RequestGrade()
         {
+            bool isFirst = true;
             int grade;
             do
             {
                 try
                 {
-                    Console.Write("Enter a ");
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.Write("Number\n");
-                    Console.ResetColor();
+                    if(isFirst)
+                    {
+                        Console.Write("Enter a ");
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write("Number\n");
+                        Console.ResetColor();
+                    }else
+                    {
+                        Console.Write("Enter a ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("Valid ");
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write("Number\n");
+                        Console.ResetColor();
+                    }
                     Console.Write("->");
                     grade = Convert.ToInt16(Console.ReadLine());
                 }
                 catch (Exception)
                 {
                     grade = -1;
+                    isFirst = false;
                 }
 
             } while (grade < 0);
