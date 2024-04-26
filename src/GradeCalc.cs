@@ -6,7 +6,12 @@ namespace Grade_Calculator
     {
         public static void Evaluate(int grade, Func<string, int> callback)
         {
-            callback($"Your Grade is {grade}");
+            if (grade >= 101) callback("Invalid Grade");
+            if (grade <= 100 && grade >= 98) callback("With Highest Honors");
+            if (grade <= 97 && grade >= 95) callback("With High Honors");
+            if (grade <= 94 && grade >= 90) callback("With Honors");
+            if (grade <= 89 && grade >= 75) callback("Passed");
+            if (grade <= 74) callback("Failed");
         }
 
         public static int RequestGrade()
