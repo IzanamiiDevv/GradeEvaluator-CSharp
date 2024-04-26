@@ -31,7 +31,7 @@ dotnet run
 - If you enter a grade of 60, you will receive an alert saying "Failed".
 
 ## Note
-This Project was a C# version of my Older Project [WhatsMyGrade](https://github.com/IzanamiiDevv/WhatsMyGrade) it is Created using HTML, CSS, JS and WASM C++
+This Project was a **C# version** of my Older Project [WhatsMyGrade](https://github.com/IzanamiiDevv/WhatsMyGrade) it is Created using HTML, CSS, JS and WASM C++
 
 ## Contributing
 
