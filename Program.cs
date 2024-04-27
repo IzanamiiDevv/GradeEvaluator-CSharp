@@ -1,5 +1,6 @@
 ﻿using System;
 using Grade_Calculator;
+using Window;
 
 namespace Main
 {
@@ -7,6 +8,8 @@ namespace Main
     {
         public static void Main()
         {
+            Window_GUI.Load();
+            
             int grade = RequestGrade();
 
             Evaluate(grade,(response)=>{
