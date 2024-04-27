@@ -53,7 +53,11 @@ namespace Grade_Calculator
 
         public static void RequestLoop()
         {
-            bool res = Convert.ToChar(Console.ReadKey()) == 'y';
+            Console.Write("Would you like to Evaluate a Grade again?\n");
+            Console.Write("Press (y/n): ");
+            bool res = Convert.ToChar(
+            (Console.ReadKey() + "")
+            .ToLower()) == 'y';
 
             if(res)
             {
