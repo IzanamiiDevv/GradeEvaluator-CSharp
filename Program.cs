@@ -1,17 +1,20 @@
 ﻿using System;
 using Grade_Calculator;
 
-class Program : GradeCalc
+namespace Main
 {
-    public static void Main()
+    class Program : GradeCalc
     {
-        int grade = RequestGrade();
+        public static void Main()
+        {
+            int grade = RequestGrade();
 
-        Evaluate(grade,(response)=>{
-            Console.WriteLine(response);
-            return 0;
-        });
+            Evaluate(grade,(response)=>{
+                Console.WriteLine(response);
+                return 0;
+            });
 
-        Console.WriteLine("Good");
+            RequestLoop();
+        }
     }
 }

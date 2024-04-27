@@ -49,5 +49,11 @@ namespace Grade_Calculator
             } while (grade < 0);
             return grade;
         }
+
+        public static void RequestLoop()
+        {
+            char res = Convert.ToChar(Console.ReadKey());
+            
+        }
     }
 }
