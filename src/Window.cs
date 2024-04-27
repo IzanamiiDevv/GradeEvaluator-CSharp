@@ -8,9 +8,9 @@ namespace Window
         public static void Load()
         {
             Console.Title = "Grade Evaluator In C#";
-            Refresh();
         }
 
+        //Script not Running.
         public static void Refresh()
         {
             try
@@ -31,12 +31,8 @@ namespace Window
                 process.StandardInput.WriteLine("cls");
                 process.StandardInput.Flush();
                 process.StandardInput.Close();
-                string output = process.StandardOutput.ReadToEnd();
-                string error = process.StandardError.ReadToEnd();
 
                 process.WaitForExit();
-                Console.WriteLine("Output: " + output);
-                Console.WriteLine("Error: " + error);
                 process.Close();
             }
             catch (Exception ex)
