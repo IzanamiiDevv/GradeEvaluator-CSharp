@@ -66,10 +66,14 @@ namespace Grade_Calculator
                 Program.Main();
             }else
             {
+                Console.Write('\n');
                 Console.Write("Program exited ");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Sucessfully\n");
-                Console.Write("Thankyou for using this Program!\n");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write("Thankyou for using this Program\n");
                 Console.Write("Follow me for more Content like this!");
+                Console.ResetColor();
             }
             
         }
