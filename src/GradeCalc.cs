@@ -1,4 +1,5 @@
 using System;
+using Main;
 
 namespace Grade_Calculator
 {
@@ -52,7 +53,18 @@ namespace Grade_Calculator
 
         public static void RequestLoop()
         {
-            char res = Convert.ToChar(Console.ReadKey());
+            bool res = Convert.ToChar(Console.ReadKey()) == 'y';
+
+            if(res)
+            {
+                Program.Main();
+            }else
+            {
+                Console.Write("Program exited ");
+                Console.Write("Sucessfully");
+                Console.Write("Thankyou for using this Program!");
+                Console.Write("Follow me for more Content like this1");
+            }
             
         }
     }
