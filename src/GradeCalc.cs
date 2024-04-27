@@ -55,19 +55,21 @@ namespace Grade_Calculator
         {
             Console.Write("Would you like to Evaluate a Grade again?\n");
             Console.Write("Press (y/n): ");
-            bool res = Convert.ToChar(
-            (Console.ReadKey() + "")
-            .ToLower()) == 'y';
+            bool res = char.ToLower(
+                Convert.ToChar(Console.ReadKey().KeyChar)
+            ) == 'y';
+
 
             if(res)
             {
+                Console.Write('\n');
                 Program.Main();
             }else
             {
                 Console.Write("Program exited ");
-                Console.Write("Sucessfully");
-                Console.Write("Thankyou for using this Program!");
-                Console.Write("Follow me for more Content like this1");
+                Console.Write("Sucessfully\n");
+                Console.Write("Thankyou for using this Program!\n");
+                Console.Write("Follow me for more Content like this!");
             }
             
         }
