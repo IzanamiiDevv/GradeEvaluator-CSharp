@@ -1,5 +1,6 @@
 using System;
 using Main;
+using Window;
 
 namespace Grade_Calculator
 {
@@ -53,6 +54,7 @@ namespace Grade_Calculator
 
         public static void RequestLoop()
         {
+            Window_GUI.Refresh();
             Console.Write("Would you like to Evaluate a Grade again?\n");
             Console.Write("Press (y/n): ");
             bool res = char.ToLower(
