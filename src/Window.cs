@@ -7,7 +7,7 @@ namespace Window
     {
         public static void Load()
         {
-            Console.Title = "Grade Evaluator In C#";
+            Console.Title = "Grade Evaluator In C#"; 
         }
 
         //Script not Running.
